@@ -59,7 +59,7 @@ const MenuButton = () => {
 const Notification = () => {
   const [parts, setParts] = useState([AvatarBox, NotificationText, MenuButton]);
   return (
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col min-w-96">
       <div className="flex">
         {parts.map((Part, index) => (
           <Part key={index} />
